@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    organization = "erkans-playground"
+
+    workspaces {
+      name = "terraform-openvpn-aws"
+    }
+  }
+}
+
 data "aws_ami" "amazon_linux_2" {
   most_recent = true
 

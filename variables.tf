@@ -1,10 +1,12 @@
 variable "aws_region" {
   description = "The AWS region to use"
-  default     = "eu-west-2"
+  default     = "us-east-1"
 }
 
 variable "shared_credentials_file" {
   description = "The location of the AWS shared credentials file (e.g. ~dominic/.aws/credentials)"
+  default     = "/Users/erkandjafer/.aws/credentials" 	
+
 }
 
 variable "profile" {
